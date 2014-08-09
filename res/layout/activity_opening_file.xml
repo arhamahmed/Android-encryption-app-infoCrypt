@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.infocrypt.infocrypt.OpeningFile">
+
+    <TextView
+        android:id="@+id/opTitle"
+        android:text="@string/fileTitle"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/opFileName"
+        android:layout_below="@id/opTitle"
+        android:hint="@string/fileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/opUserKey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/keyHint"
+        android:layout_below = "@id/opFileName"/>
+
+    <Button
+        android:id="@+id/opDecrypt"
+        android:text="@string/openF"
+        android:onClick="opDecryptFile"
+        android:layout_below="@id/opUserKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id = "@+id/delButton"
+        android:onClick="delFile"
+        android:text="@string/delFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/opUserKey"
+        android:layout_alignRight="@+id/fileContent"
+        android:layout_alignEnd="@+id/fileContent" />
+
+    <ListView
+        android:id="@+id/fileContent"
+        android:layout_below="@id/delButton"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</RelativeLayout>

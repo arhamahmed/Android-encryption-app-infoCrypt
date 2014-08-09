@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.infocrypt.infocrypt.StartNewCrypt">
+
+    <TextView
+        android:id="@+id/title"
+        android:text="@string/strTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/userTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:hint="@string/edit_message" />
+
+    <EditText
+        android:id="@+id/userDescrip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userTitle"
+        android:hint="@string/edit_descrip" />
+
+    <LinearLayout
+        android:id="@+id/buttonWrap"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/userDescrip"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/addMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_info"/>
+
+            <Button
+                android:id="@+id/done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="prepFile"
+                android:text="@string/done"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="false"
+        android:layout_below="@id/buttonWrap"/>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">InfoCrypt</string>
+    <string name="what_do">What would you like to do?</string>
+    <string name="action_settings">Settings</string>
+    <string name="button_new">Make a new file</string>
+    <string name="button_open">Open an existing file</string>
+    <string name="title_activity_start_new_crypt">Creating a New File</string>
+    <string name="strTitle">File Contents</string>
+    <string name="edit_message">Enter a title/name</string>
+    <string name="edit_descrip">Enter a description</string>
+    <string name="add_info"> Add </string>
+    <string name="done"> Done! </string>
+    <string name="title_activity_prep_file">Preparing a File</string>
+    <string name="info">  Your file is almost ready to be created and encrypted! All that
+        remains is for you to create a key that will act as a password for your file. Ensure that the
+        key you come up with is both strong \(tips given below\) and easy to remember, as well. We suggest
+        you to write the key down somewhere in the case it is forgotten along with the file name.
+        The program will not remember your key or file name for security purposes. Additionally, we recommend
+        you to use the following guidelines for a strong key\: </string>
+    <string name="stepTitle">The final step</string>
+    <string name="keyHint">Type your key here</string>
+    <string name="tip1">-the longer the password the stronger it is, at least 5 characters long</string>
+    <string name="tip2">-at least use 1 capital letter</string>
+    <string name="tip3">-at least use 1 number</string>
+    <string name="tip4">-at least use 1 symbol</string>
+    <string name="tip5">-example (DO NOT USE): hI_5On</string>
+    <string name="fileName">Enter a name for your file</string>
+    <string name="createFile">Create my file!</string>
+    <string name="autoGen"> Generate a key for me!</string>
+    <string name="home"> Main Menu</string>
+    <string name="title_activity_opening_file">Open File</string>
+    <string name="hello_world">Hello world!</string>
+    <string name ="fileTitle">File\: </string>
+    <string name="openF">Open and Decrypt File</string>
+    <string name="delFile"> Delete File</string>
+
+</resources>

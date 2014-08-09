@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.infocrypt.infocrypt.PrepFile">
+
+    <TextView
+        android:id="@+id/titlePrep"
+        android:text="@string/stepTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/info"
+        android:text="@string/info"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/titlePrep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tip1"
+        android:text="@string/tip1"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tip2"
+        android:text="@string/tip2"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/tip1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tip3"
+        android:text="@string/tip3"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/tip2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tip4"
+        android:text="@string/tip4"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/tip3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tip5"
+        android:text="@string/tip5"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/tip4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/userKey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/keyHint"
+        android:layout_below = "@id/tip5"/>
+
+    <EditText
+        android:id="@+id/fileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/fileName"
+        android:layout_below = "@id/userKey"/>
+
+    <Button
+        android:id="@+id/createFile"
+        android:text="@string/createFile"
+        android:onClick="createFile"
+        android:layout_below="@id/fileName"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
